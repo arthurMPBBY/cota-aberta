@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cota-aberta"
+version = "0.1.0"
+description = "Analisador de fundos CVM com cálculos explicados e qualidade de dados."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["pandas>=2.2,<3", "plotly>=5.24,<7", "requests>=2.32,<3", "streamlit>=1.66,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+cota-aberta = "cota_aberta.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cota_aberta"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

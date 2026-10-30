@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#F9F8F6"/>
+  <rect x="12" y="12" width="96" height="96" fill="none" stroke="#1E2022" stroke-width="2"/>
+  <path d="M26 84 L48 54 L70 66 L94 36" fill="none" stroke="#C85A3F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="94" cy="36" r="3.5" fill="#C85A3F"/>
+  <text x="60" y="104" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#1E2022" text-anchor="middle" letter-spacing="1.5">COTA ABERTA</text>
+</svg>
